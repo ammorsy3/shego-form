@@ -1,3 +1,5 @@
+import React from 'react'
+
 const benefits = [
   {
     icon: (
@@ -45,17 +47,17 @@ export default function Benefits() {
           ليش تنضمين لـ <span className="gradient-text">شيقو</span>؟
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-5 text-center hover:scale-105 transition-transform duration-300"
+              className="glass rounded-2xl p-5 text-center hover:scale-105 transition-transform duration-300 h-full flex flex-col items-center"
             >
-              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white">
+              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white shadow-lg shadow-purple-900/50">
                 {benefit.icon}
               </div>
-              <h3 className="text-base font-bold mb-2">{benefit.title}</h3>
-              <p className="text-gray-300 text-xs leading-relaxed">{benefit.description}</p>
+              <h3 className="text-base font-bold mb-2 text-white">{benefit.title}</h3>
+              <p className="text-gray-300 text-sm leading-relaxed flex-grow flex items-center justify-center">{benefit.description}</p>
             </div>
           ))}
         </div>
