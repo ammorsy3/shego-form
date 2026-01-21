@@ -5,16 +5,17 @@ import RegistrationForm from './components/RegistrationForm'
 import Footer from './components/Footer'
 
 function App() {
-  // Replace with your actual API endpoint
   const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || '/api/register'
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center">
-      <main className="w-full max-w-7xl mx-auto px-4">
-        <Hero />
-        <Benefits />
-        <Requirements />
-        <RegistrationForm apiEndpoint={API_ENDPOINT} />
+      <main className="w-full max-w-7xl mx-auto px-4 py-10 md:py-14">
+        <div className="flex flex-col gap-14 md:gap-20">
+          <Hero />
+          <Benefits />
+          <Requirements />
+          <RegistrationForm apiEndpoint={API_ENDPOINT} />
+        </div>
       </main>
       <Footer />
     </div>
