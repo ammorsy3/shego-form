@@ -101,8 +101,8 @@ export default function RegistrationForm({ apiEndpoint = "/api/register" }) {
   const labelClass = "block text-base font-semibold mb-3 text-right text-white"
 
   return (
-    <section id="register" className="w-full">
-      <div className="w-full">
+    <section id="register" className="w-full flex justify-center">
+      <div className="w-full max-w-4xl">
         <div className="glass rounded-3xl p-8 md:p-12 w-full shadow-2xl shadow-purple-900/20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             سجلي الآن
