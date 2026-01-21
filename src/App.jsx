@@ -9,11 +9,17 @@ function App() {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center">
-      <main className="w-full max-w-7xl mx-auto px-4 py-10 md:py-14">
-        <div className="flex flex-col gap-14 md:gap-20">
+      <main className="w-full flex flex-col items-center gap-16 md:gap-24 py-12 md:py-20 px-4">
+        <div className="w-full max-w-6xl flex justify-center">
           <Hero />
+        </div>
+        <div className="w-full max-w-6xl flex justify-center">
           <Benefits />
+        </div>
+        <div className="w-full max-w-6xl flex justify-center">
           <Requirements />
+        </div>
+        <div className="w-full max-w-4xl flex justify-center">
           <RegistrationForm apiEndpoint={API_ENDPOINT} />
         </div>
       </main>
