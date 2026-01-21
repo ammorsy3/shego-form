@@ -11,9 +11,9 @@ const requirements = [
 
 export default function Requirements() {
   return (
-    <section className="w-full">
+    <section className="w-full py-8 md:py-12">
       <div className="w-full">
-        <div className="glass rounded-3xl p-8 md:p-10 w-full relative overflow-hidden">
+        <div className="glass rounded-3xl p-8 md:p-12 w-full relative overflow-hidden">
           {/* Decorative background element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2" />
           

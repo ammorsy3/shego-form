@@ -6,12 +6,12 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden py-8 md:py-12">
       {/* Background decorative elements */}
       <div className="absolute top-20 right-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 left-20 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 text-center mx-auto">
+      <div className="relative z-10 text-center mx-auto pb-8">
         {/* Logo */}
         <div className="animate-float mb-6">
           <ShegoLogo className="w-28 h-28 md:w-36 md:h-36 mx-auto" />

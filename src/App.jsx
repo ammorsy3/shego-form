@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center">
-      <main className="w-full max-w-7xl px-4 py-8 flex flex-col gap-12 md:gap-20">
+      <main className="w-full max-w-7xl px-4 py-8 md:py-12 flex flex-col gap-20 md:gap-32">
         <Hero />
         <Benefits />
         <Requirements />
