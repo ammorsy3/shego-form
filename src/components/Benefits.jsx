@@ -41,8 +41,8 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="w-full py-12 mb-12">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full">
+      <div className="w-full">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
           ليش تنضمين لـ <span className="gradient-text">شيقو</span>؟
         </h2>
