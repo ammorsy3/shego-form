@@ -6,7 +6,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-20 mb-12">
+    <section className="relative w-full overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 right-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 left-20 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
