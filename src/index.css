@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Shego Brand Colors */
+:root {
+  --shego-purple: #8b37f1;
+  --shego-purple-dark: #6b21a8;
+  --shego-purple-light: #a855f7;
+  --shego-gradient-start: #9333ea;
+  --shego-gradient-end: #7c3aed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: linear-gradient(135deg, #1a0a2e 0%, #16082a 50%, #0f051d 100%);
+  min-height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections are block-level and have proper flow */
+section {
+  display: block;
+  position: relative;
+  clear: both;
+}
+
+main {
+  display: block;
+  position: relative;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a0a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--shego-purple);
+  border-radius: 4px;
+}
+
+/* Form input styles */
+input, select, textarea {
+  font-family: 'Tajawal', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Button hover glow effect */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(139, 55, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(139, 55, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(139, 55, 241, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 55, 241, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #a855f7 0%, #8b37f1 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse glow animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 55, 241, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(139, 55, 241, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
